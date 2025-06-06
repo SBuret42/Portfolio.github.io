@@ -150,7 +150,7 @@ body>img {
 
 main > div > article {
     margin-left: 250px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     width: 35%;
 }
 
@@ -169,7 +169,7 @@ main > div >article > img {
 
 main > div >section {
     margin-left: 48%;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     width: 35%;
 }
 
@@ -180,10 +180,20 @@ main > div >section p {
 
 main > div > #imgG {
     position: absolute;
-    margin-top: -250px;
-    margin-left: 350px;
-    margin-bottom: 100px;
-    width: 20%;
+    margin-top: -300px;
+    margin-left: 150px;
+    object-fit: cover;
+    width: 35%;
+    border:  #F5F5F5 solid;
+}
+
+main > div > #imgD {
+    position: absolute;
+    margin-top: -340px;
+    margin-left: 850px;
+    object-fit: cover;
+    width: 35%;
+    border:  #F5F5F5 solid;
 }
 
 main > div > section > p > img{
