@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio - Sylvain BURET</title>
+        <link rel="stylesheet" href="styleProjetDétails.css">
+    </head>
+    <body>
+        <nav id="nav_princ">
+            <h1><a href="Index.html">Portfolio - Sylvain BURET</a></h1>
+            <ul>
+                <li id="sec" class ="deroulant"><p><a  href="projets.html">Mes projet</a></p>
+                    <ul class="sous">
+                        <li><a href="projetExplorer.html">Explorateur de fractales</a></li>
+                        <li><a href="projetClassificateur.html">Classificateur automatique</a></li>
+                        <li><a href="projetSiteCap.html">Site institutionnel</a></li>
+                        <li><a href="projetBase.html">Base de donnée</a></li>
+                    </ul>
+                </li>
+                <li><p><a href="Index.html">Qui suis-je ?</a></p></li>
+                <li id="langue"><p><a href="indexEN.html" ><img src="union-jack-1027898_640.jpg" alt="flag"></a></p></li>
+            </ul>
+        </nav>
+        <img src="Screenshot_20250527_104331.jpg" alt="">
+            <div id="entete">
+                <article>
+                    <h3>Projet réalisé avec :</h3>
+                    <ul>
+                        <li>Grataloup Tanguy</li>
+                    </ul>
+                </article>
+                <section>
+                    <ul>
+                        <li>Python</li>
+                    </ul>
+                    <a href="https://github.com/SBuret42/Explorateur-de-fractales">Lien vers le dépot Git du projet</a>
+                </section>
+            </div>
+        <Main>
+            <div>
+                <article>
+                    <h2>C'est quoi ce projet ?</h2>
+                    <p>
+                        Durant le premier semestre de ma première année j’ai aussi pu réaliser un classificateur de dépêche journalistique en java en groupe de 2. Notre but été de partir de fichier txt contenant des dépêche trouver des moyens de les classer en 5 catégories sciences,politique, sport, économie et culture . Nous avons ainsi réalisé 3 algorithme.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <section>
+                    <h2>Algorithme par lexique manuel</h2>
+                    <p>
+                        c’était le plus simple à faire : premièrement nous avons récupéré quelques mots apparaissent surtout dans telle ou telle catégories. Ainsi quand ces mots apparaissent dans la dépêche que l’algorithme doit trier il donne des points à la catégorie correspondante. Enfin l’algorithme sélectionne la catégorie qui à le plus de points et catégorise la dépêche puis passe à la suivante. Cette technique est assez rapide mais peu fiable, seulement 60% des dépêches étaient correctement triées, car les lexiques sont trop limité.                
+                    </p>
+                </section>
+            </div>
+            <div>
+                <article>
+                    <h2>Algorithme par lexique automatique trié</h2>
+                    <p>
+                        Ensuite nous avons donc grandement améliorer le premier algorithme en faisant en sorte que le lexique soit créé par l’algorithme en lui même. l’algorithme stocke tout les mots de toutes les dépêches dans tout les lexiques (en enlevant les mots outils comme le, la, un, comme etc)puis attribut des points pour chaque fois où un mots apparaît d’un lexique apparaît dans une dépêche de la catégorie du lexique mais en enlève un pour toutes les fois où il apparaît dans une dépêche d’une autre catégorie. puis l’algorithme fonctionne de la même manière.
+                    </p>
+                    <p>
+                        cette méthode est très fiable (95.6% des dépêches sont correctement classées) mais lente à cause de la taille des lexiques. Nous avons donc améliorer ce processus en triant les lexique via un tri à fusion (le plus rapide que nous savions programmer) afin d’utiliser des recherche plus rapide que les séquentielles comme la dichotomie.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <section>
+                    <h2>Algorithme par KNN (K plus proche voisins)</h2>
+                    <p>
+                        Ce type d’algorithme est assez simple à faire mais complexe à expliquer. L’algorithme ce base sur cette affirmation : “Si 5 de mes 6 voisins sont bleu je suis statistique bleu” Ainsi KNN se base sur ses voisins donc nous devons définir ce qu’est un voisins en définissant ce qu’est la distance dans notre algorithme.                
+                    </p>
+                    <p>
+                        Prenons un exemple : <br>
+                        <img src="shémaKNN.png" alt="Schéma KNN">
+                    </p>
+                    
+                    <p>
+                        Ici si la distance est de 1 (le cercle plein) alors les voisins les plus proches sont ceux dans ce cercle : 2 triangles et 1 carré. Ainsi le disque au centre est un triangle selon KNN. Mais si la distance est de 2 (le cercle en pointiller) alors il y a 3 carré pour 2 triangle ainsi le disque et une carré.
+                    </p>
+                    <p>
+                        La distance est donc une valeur très importante des gens on passé des année à chercher les meilleurs distance mais nos professeur nous on demander de calculer la distance via le nombre de mots commun.
+                    </p>
+                    <p>
+                       Ainsi l’algorithme compare les mots de la dépêche à classer avec tout les mots (sauf les mots outils) des dépêche de sa base de donnée. il attribut ainsi un score à chaque catégories. Ensuite il sélectionne les 5 dépêche de la base de donnée avec les plus grand score de mots communs et choisi la catégorie qui apparaît le plus parmi elles. Cet algorithme peut être très puissant mais notre manière de calculer le rend très faible. il a un taux de réussite (65%) équivalent au lexique manuel et est le plus lents. 
+                    </p>
+                </section>
+            </div>
+            <div>
+                <article>
+                    <h2>Conclusion</h2>
+                    <p>
+                        Durant ce projet j’ai programmé l’algorithme KNN, une bonne de l’algorithme par lexique trié et et son amélioration par le trie.
+                    </p>
+                </article>
+            </div>
+        </Main>
+        <footer>
+            <section>
+                <article>
+                    <h2>Mon GitHub</h2>
+                    <ul>
+                        <li><a href="https://github.com/SBuret42/"> Mon compte Git : SBuret42 </a></li>
+                    </ul> 
+                </article>
+                <article>
+                    <h2>Me contacter</h2>
+                    <ul>
+                        <li><a href="https://fr.linkedin.com/in/sylvain-buret-42918430b"> Mon compte LinkedIn : Sylvain BURET</a></li>
+                        <li><a href="mailto:sylvain.buret.contact@gmail.com">adresse mail pro : <br>sylvain.buret.contact@gmail.com</a> </li>
+                    </ul>
+                </article>
+            </section>
+        </footer>
+    </body>
+</html>
