@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio - Sylvain BURET</title>
+        <link rel="stylesheet" href="styleProjetDétails.css">
+    </head>
+    <body>
+        <nav id="nav_princ">
+            <h1><a href="Index.html">Portfolio - Sylvain BURET</a></h1>
+            <ul>
+                <li id="sec" class ="deroulant"><p><a  href="projets.html">Mes projet</a></p>
+                    <ul class="sous">
+                        <li><a href="projetExplorer.html">Explorateur de fractales</a></li>
+                        <li><a href="projetAutoMeteo.html">Automate météo</a></li>
+                        <li><a href="projetClassificateur.html">Classificateur automatique</a></li>
+                        <li><a href="projetSiteCap.html">Site institutionnel</a></li>
+                        <li><a href="projetBase.html">Base de données</a></li>
+                    </ul>
+                </li>
+                <li><p><a href="Index.html">Qui suis-je ?</a></p></li>
+                <li id="langue"><p><a href="indexEN.html" ><img src="union-jack-1027898_640.jpg" alt="flag"></a></p></li>
+            </ul>
+        </nav>
+        <img src="projAutoMeteoBan.jpg" alt="">
+        <div id="entete">
+            <article>
+                    <h3>Projet réalisé avec :</h3>
+                    <ul>
+                        <li>Sanchez Thomas</li>
+                    </ul>
+            </article>
+            <section>
+                <ul>
+                    <li>MicroPython</li>
+                    <li>Electronique</li>
+                </ul>
+                <a href="https://github.com/SBuret42/RobKey">Lien vers le dépot Git du projet</a>
+            </section>
+        </div>
+        <Main>
+            <div>
+                <article>
+                    <h2>C'est quoi ce projet ?</h2>
+                    <p>
+                        Ce projet est un robot piloté par un ESP32. Il indique sur son écran l'heure, la météo actuelle, la température de la pièce où il est et la température moyenne de la journée d'aujourd'hui et de demain. Il peut également danser en bougeant ses bras et son bassin.
+                    </p>
+                </article>
+                <img id="imgD" src="robkey.jpg" alt="">
+            </div>
+            <div>
+                <section>
+                    <h2>Construction</h2>
+                    <p>
+                        Ce robot est entièrement fait en Lego. Sa base vient d'un véhicule Lego technique d'autochenille. Il est équipé de 3 servomoteurs, 1 capteur de température et 2 boutons pour les différentes fonctions, implémentés car les boutons de l'ESP n'étaient pas suffisants.
+                    </p>
+                </section>
+            </div>
+            <div>
+                <article>
+                    <h2>Programation du robot</h2>
+                    <p>
+                        D'abord, on code les briques élémentaires de notre micrologiciel : une classe pour les 4 boutons qui fait une liste des boutons et des PIN rattachés, une classe qui récupère les informations du capteur de température, et les classes gérant les servomoteurs (elles trouvées sur internet).
+                    </p>
+                </article>
+            </div>
+            <div>
+                <section>
+                    <h2>La partie sans-fils</h2>
+                    <p>
+                        Ce robot est également capable de se connecter à un réseau Wi-Fi pour savoir où il se trouve. Pour faire cela, le robot a une fonction lui permettant de se connecter à un wifi à partir d'un si et le mot de passe, une autre pour se géolocaliser et une autre qui utilise une API pour connaître la météo de là où il est.</p>
+                </section>
+            </div>
+            <div>
+                <article>
+                    <h2>Conclusion</h2>
+                    <p>
+                        Ainsi, durant ce projet j'ai pu designer et construire entièrement le robot, j'ai également pu programmer toute la partie logicielle liée aux mouvements du robot.
+                    </p>
+                </article>
+            </div>
+        </Main>
+        <footer>
+            <section>
+                <article>
+                    <h2>Mon GitHub</h2>
+                    <ul>
+                        <li><a href="https://github.com/SBuret42/"> Mon compte Git : SBuret42 </a></li>
+                    </ul> 
+                </article>
+                <article>
+                    <h2>Me contacter</h2>
+                    <ul>
+                        <li><a href="https://fr.linkedin.com/in/sylvain-buret-42918430b"> Mon compte LinkedIn : Sylvain BURET</a></li>
+                        <li><a href="mailto:sylvain.buret.contact@gmail.com">adresse mail pro : <br>sylvain.buret.contact@gmail.com</a> </li>
+                    </ul>
+                </article>
+            </section>
+        </footer>
+    </body>
+</html>

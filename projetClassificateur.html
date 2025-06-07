@@ -12,9 +12,10 @@
                 <li id="sec" class ="deroulant"><p><a  href="projets.html">Mes projet</a></p>
                     <ul class="sous">
                         <li><a href="projetExplorer.html">Explorateur de fractales</a></li>
+                        <li><a href="projetAutoMeteo.html">Automate météo</a></li>
                         <li><a href="projetClassificateur.html">Classificateur automatique</a></li>
                         <li><a href="projetSiteCap.html">Site institutionnel</a></li>
-                        <li><a href="projetBase.html">Base de donnée</a></li>
+                        <li><a href="projetBase.html">Base de données</a></li>
                     </ul>
                 </li>
                 <li><p><a href="Index.html">Qui suis-je ?</a></p></li>
@@ -41,7 +42,7 @@
                 <article>
                     <h2>C'est quoi ce projet ?</h2>
                     <p>
-                        Durant le premier semestre de ma première année j’ai aussi pu réaliser un classificateur de dépêche journalistique en java en groupe de 2. Notre but été de partir de fichier txt contenant des dépêche trouver des moyens de les classer en 5 catégories sciences,politique, sport, économie et culture . Nous avons ainsi réalisé 3 algorithme.
+                        Durant le premier semestre de ma première année j’ai aussi pu réaliser un classificateur de dépêche journalistique en Java en groupe de 2. Notre but était de partir de fichiers TXT contenant des dépêches pour trouver des moyens de les classer en 5 catégories : sciences, politique, sport, économie et culture. Nous avons ainsi réalisé 3 algorithmes.
                     </p>
                 </article>
             </div>
@@ -49,7 +50,7 @@
                 <section>
                     <h2>Algorithme par lexique manuel</h2>
                     <p>
-                        c’était le plus simple à faire : premièrement nous avons récupéré quelques mots apparaissent surtout dans telle ou telle catégories. Ainsi quand ces mots apparaissent dans la dépêche que l’algorithme doit trier il donne des points à la catégorie correspondante. Enfin l’algorithme sélectionne la catégorie qui à le plus de points et catégorise la dépêche puis passe à la suivante. Cette technique est assez rapide mais peu fiable, seulement 60% des dépêches étaient correctement triées, car les lexiques sont trop limité.                
+                        C’était le plus simple à faire : premièrement nous avons récupéré quelques mots apparaissant surtout dans telle ou telle catégories. Ainsi, quand ces mots apparaissent dans la dépêche que l’algorithme doit trier, il donne des points à la catégorie correspondante. Enfin l’algorithme sélectionne la catégorie qui a le plus de points et catégorise la dépêche, puis passe à la suivante. Cette technique est assez rapide mais peu fiable, seulement 60% des dépêches étaient correctement triées, car les lexiques sont trop limités.
                     </p>
                 </section>
             </div>
@@ -57,10 +58,10 @@
                 <article>
                     <h2>Algorithme par lexique automatique trié</h2>
                     <p>
-                        Ensuite nous avons donc grandement améliorer le premier algorithme en faisant en sorte que le lexique soit créé par l’algorithme en lui même. l’algorithme stocke tout les mots de toutes les dépêches dans tout les lexiques (en enlevant les mots outils comme le, la, un, comme etc)puis attribut des points pour chaque fois où un mots apparaît d’un lexique apparaît dans une dépêche de la catégorie du lexique mais en enlève un pour toutes les fois où il apparaît dans une dépêche d’une autre catégorie. puis l’algorithme fonctionne de la même manière.
+                        Ensuite, nous avons donc grandement amélioré le premier algorithme en faisant en sorte que le lexique soit créé par l’algorithme en lui-même. L’algorithme stocke tous les mots de toutes les dépêches dans tous les lexiques (en enlevant les mots outils comme le, la, un, comme etc.), puis attribue des points pour chaque fois qu'un mot apparaît dans une dépêche de la catégorie du lexique mais en enlève un pour toutes les fois où il apparaît dans une dépêche d’une autre catégorie. Puis l’algorithme fonctionne de la même manière.
                     </p>
                     <p>
-                        cette méthode est très fiable (95.6% des dépêches sont correctement classées) mais lente à cause de la taille des lexiques. Nous avons donc améliorer ce processus en triant les lexique via un tri à fusion (le plus rapide que nous savions programmer) afin d’utiliser des recherche plus rapide que les séquentielles comme la dichotomie.
+                        Cette méthode est très fiable (95,6% des dépêches sont correctement classées), mais lente à cause de la taille des lexiques. Nous avons donc amélioré ce processus en triant les lexiques via un tri à fusion (le plus rapide que nous savions programmer) afin d’utiliser des recherches plus rapides que les séquentielles, comme la dichotomie.
                     </p>
                 </article>
             </div>
@@ -68,7 +69,7 @@
                 <section>
                     <h2>Algorithme par KNN (K plus proche voisins)</h2>
                     <p>
-                        Ce type d’algorithme est assez simple à faire mais complexe à expliquer. L’algorithme ce base sur cette affirmation : “Si 5 de mes 6 voisins sont bleu je suis statistique bleu” Ainsi KNN se base sur ses voisins donc nous devons définir ce qu’est un voisins en définissant ce qu’est la distance dans notre algorithme.                
+                        Ce type d’algorithme est assez simple à faire mais complexe à expliquer. L’algorithme se base sur cette affirmation : “Si 5 de mes 6 voisins sont bleus, je suis statistique bleue.” Ainsi, KNN se base sur ses voisins donc nous devons définir ce qu’est un voisin en définissant ce qu’est la distance dans notre algorithme.
                     </p>
                     <p>
                         Prenons un exemple : <br>
@@ -76,13 +77,13 @@
                     </p>
                     
                     <p>
-                        Ici si la distance est de 1 (le cercle plein) alors les voisins les plus proches sont ceux dans ce cercle : 2 triangles et 1 carré. Ainsi le disque au centre est un triangle selon KNN. Mais si la distance est de 2 (le cercle en pointiller) alors il y a 3 carré pour 2 triangle ainsi le disque et une carré.
+                        Ici, si la distance est de 1 (le cercle plein), alors les voisins les plus proches sont ceux dans ce cercle : 2 triangles et 1 carré. Ainsi, le disque au centre est un triangle selon KNN. Mais si la distance est de 2 (le cercle en pointillé), alors il y a 3 carrés pour 2 triangles, ainsi le disque est un carré.
                     </p>
                     <p>
-                        La distance est donc une valeur très importante des gens on passé des année à chercher les meilleurs distance mais nos professeur nous on demander de calculer la distance via le nombre de mots commun.
+                        La distance est donc une valeur très importante. Des gens ont passé des années à chercher les meilleures distances, mais nos professeurs nous ont demandé de calculer la distance via le nombre de mots communs.
                     </p>
                     <p>
-                       Ainsi l’algorithme compare les mots de la dépêche à classer avec tout les mots (sauf les mots outils) des dépêche de sa base de donnée. il attribut ainsi un score à chaque catégories. Ensuite il sélectionne les 5 dépêche de la base de donnée avec les plus grand score de mots communs et choisi la catégorie qui apparaît le plus parmi elles. Cet algorithme peut être très puissant mais notre manière de calculer le rend très faible. il a un taux de réussite (65%) équivalent au lexique manuel et est le plus lents. 
+                       Ainsi l’algorithme compare les mots de la dépêche à classer avec tous les mots (sauf les mots outils) des dépêches de sa base de données. Il attribut ainsi un score à chaque catégorie. Ensuite, il sélectionne les 5 dépêches de la base de données avec les plus grands scores de mots communs et choisit la catégorie qui apparaît le plus parmi elles. Cet algorithme peut être très puissant, mais notre manière de calculer le rend très faible. Il a un taux de réussite (65%) équivalent au lexique manuel et est le plus lents. 
                     </p>
                 </section>
             </div>
@@ -90,7 +91,7 @@
                 <article>
                     <h2>Conclusion</h2>
                     <p>
-                        Durant ce projet j’ai programmé l’algorithme KNN, une bonne de l’algorithme par lexique trié et et son amélioration par le trie.
+                        Durant ce projet j’ai programmé l’algorithme KNN, une bonne partie de l’algorithme par lexique trié et et son amélioration par le tri.
                     </p>
                 </article>
             </div>
