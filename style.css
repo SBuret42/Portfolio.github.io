@@ -160,12 +160,14 @@ main > div > section > article >p {
     margin-left: 50px;
     text-align: justify;
     width: 300px;
+    font-size: 14px;
 }
 
 main > div > section > article > ul > li >p {
     margin-left: 20px;
     text-align: justify;
     width: 320px;
+    font-size: 14px;
 }
 
 main > div > section > img {
