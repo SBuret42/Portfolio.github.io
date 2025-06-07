@@ -168,6 +168,11 @@ main > #divSection {
     justify-content: space-evenly;
 }
 
+main > #divSection2 {
+   margin-left: 50%; 
+   width: 100%;
+}
+
 main > div > article {
     padding-top: 100px;
     margin-left: 250px;
@@ -175,6 +180,9 @@ main > div > article {
     width: 35%;
 }
 
+main > div > #imgRK {
+    width: 20%;
+}
 
 
 main > div >article p {
