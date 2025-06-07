@@ -64,7 +64,7 @@ nav > ul > li .sous {
 
 nav > ul > li:hover .sous {
     display: flex;
-    width: 208px;
+    width: 250px;
     flex-direction: column;
     align-items: center;
 }
@@ -73,16 +73,17 @@ nav > ul > li:hover .sous {
     display: flex;
     list-style-type: none;
     text-align: center;
-    width: 65%;
+    width: 80%;
     height: 45px;
     align-items: center;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .sous > li > a {
     color: #15001b;
     text-decoration:none;
+    width: 100%;
     
 }
 
