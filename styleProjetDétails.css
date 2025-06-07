@@ -209,28 +209,6 @@ main > div >section p {
     text-align: justify;
 }
 
-/*
-main > div > #imgG {
-    position: absolute;
-    margin-top: -300px;
-    margin-left: 150px;
-    object-fit: cover;
-    width: 35%;
-    border:  #F5F5F5 solid;
-}
-
-
-
-main > div > #imgD {
-    position: absolute;
-    margin-top: -340px;
-    margin-left: 850px;
-    object-fit: cover;
-    width: 28%;
-    border:  #F5F5F5 solid;
-}
-    */
-
 
 main > div > img {
     width: 35%;
