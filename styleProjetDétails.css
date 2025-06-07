@@ -124,7 +124,6 @@ body>img {
     border-radius: 2px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 150px;
 }
 
 #entete > section {
@@ -152,7 +151,25 @@ body>img {
     color: #0070ad;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: -2%;
+}
+
+main > div {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 1%;
+}
+
+main > #divSection {
+    justify-content: space-evenly;
+}
+
 main > div > article {
+    padding-top: 100px;
     margin-left: 250px;
     margin-bottom: 120px;
     width: 35%;
@@ -171,17 +188,20 @@ main > div >article > img {
     width: 35%;
 }
 
+
 main > div >section {
-    margin-left: 48%;
     margin-bottom: 120px;
     width: 35%;
+    padding-top: 100px;
 }
+
 
 main > div >section p {
     margin-left: 50px;
     text-align: justify;
 }
 
+/*
 main > div > #imgG {
     position: absolute;
     margin-top: -300px;
@@ -191,6 +211,8 @@ main > div > #imgG {
     border:  #F5F5F5 solid;
 }
 
+
+
 main > div > #imgD {
     position: absolute;
     margin-top: -340px;
@@ -198,6 +220,13 @@ main > div > #imgD {
     object-fit: cover;
     width: 28%;
     border:  #F5F5F5 solid;
+}
+    */
+
+
+main > div > img {
+    width: 35%;
+    object-fit: cover;
 }
 
 main > div > section > p > img{
