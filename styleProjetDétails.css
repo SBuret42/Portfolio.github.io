@@ -2,6 +2,7 @@ body {
     background-image: url(img/shooting-star-2024127.svg);
     background-size: cover;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 99%;
 }
 
 nav {
@@ -114,8 +115,8 @@ nav #sec {
 /*-----------------Main-----------------*/
 
 body>img {
-    border: solid 10px;
-    border-color: #36128a;
+    border:  #36128a solid 10px;    
+    border-radius: 12px;
     margin-top: 80px;
     margin-bottom: 10px;
     object-fit: cover;
@@ -126,8 +127,9 @@ body>img {
 #entete {
     display: flex;
     justify-content: space-between;
-    border:  #F5F5F5 solid;
-    border-radius: 2px;
+    background-color: #1d0a49;
+    border:  #36128a solid 5px;
+    border-radius: 12px;
     padding-left: 50px;
     padding-right: 50px;
 }
